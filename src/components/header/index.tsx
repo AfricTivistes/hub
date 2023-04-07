@@ -75,7 +75,7 @@ export const Header: React.FC = () => {
                       }}
                       src={`/images/flags/${lang}.svg`}
                     />
-                    {lang === "en" ? "English" : "German"}
+                    {lang === "fr" ? "Français" : "English"}
                   </Stack>
                 </MenuItem>
               ))}

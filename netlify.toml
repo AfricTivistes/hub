@@ -1,0 +1,8 @@
+# netlify.toml
+
+[[plugins]]
+  package   = "@netlify/plugin-nextjs"
+
+[functions]
+	external_node_modules = ["next-auth", "next-i18next"]
+  included_files = ["./public/locales/fr/*.json", "./public/locales/en/*.json", "next-i18next.config.js"]

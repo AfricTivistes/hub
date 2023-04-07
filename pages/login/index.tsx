@@ -34,7 +34,7 @@ Login.noLayout = true;
 export const getServerSideProps: GetServerSideProps<{}> = async (context) => {
   const session = await getServerSession(context.req, context.res, authOptions);
 
-  const translateProps = await serverSideTranslations(context.locale ?? "en", [
+  const translateProps = await serverSideTranslations(context.locale ?? "fr", [
     "common",
   ]);
 

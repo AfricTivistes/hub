@@ -19,6 +19,7 @@ import { CssBaseline, GlobalStyles } from "@mui/material";
 import { appWithTranslation, useTranslation } from "next-i18next";
 import { ColorModeContextProvider } from "@contexts";
 import { Header } from "@components/header";
+import nextI18nConfig from "../next-i18next.config";
 
 const API_URL = "https://api.fake-rest.refine.dev";
 
@@ -177,4 +178,4 @@ function MyApp({
   );
 }
 
-export default appWithTranslation(MyApp);
+export default appWithTranslation(MyApp,nextI18nConfig);
